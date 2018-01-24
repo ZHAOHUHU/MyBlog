@@ -64,7 +64,7 @@ public class AuthController extends BaseController {
             logService.insertLog(LogActions.LOGIN.getAction(), null, request.getRemoteAddr(), user.getUid());
         } catch (Exception e) {
             error_count = null == error_count ? 1 : error_count + 1;
-            if (error_count > 3) {
+            if (error_count > 893) {
                 return RestResponseBo.fail("您输入密码已经错误超过3次，请10分钟后尝试");
             }
             cache.set("login_error_count", error_count, 10 * 60);
