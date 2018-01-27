@@ -1,5 +1,4 @@
 /**
- * Created by 13 on 2017/2/23.
  */
 !function ($) {
     "use strict";

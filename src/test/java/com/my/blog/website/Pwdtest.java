@@ -4,7 +4,6 @@ import com.my.blog.website.modal.Vo.UserVo;
 import com.my.blog.website.utils.TaleUtils;
 
 /**
- * Created by 13 on 2017/4/2.
  */
 public class Pwdtest {
     public static void main(String args[]){

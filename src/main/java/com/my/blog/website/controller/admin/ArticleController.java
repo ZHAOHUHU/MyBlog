@@ -26,9 +26,6 @@ import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
-/**
- * Created by 13 on 2017/2/21.
- */
 @Controller
 @RequestMapping("/admin/article")
 @Transactional(rollbackFor = TipException.class)

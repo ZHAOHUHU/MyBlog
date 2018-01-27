@@ -21,7 +21,6 @@ import java.util.Map;
 
 /**
  * 自定义拦截器
- * Created by BlueT on 2017/3/9.
  */
 @Component
 public class BaseInterceptor implements HandlerInterceptor {
