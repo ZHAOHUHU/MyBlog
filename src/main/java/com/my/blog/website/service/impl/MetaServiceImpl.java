@@ -50,7 +50,8 @@ public class MetaServiceImpl implements IMetaService {
     public Integer countMeta(Integer mid) {
         return metaDao.countWithSql(mid);
     }
-
+         //！#！￥
+    //!#!$
     @Override
     public List<MetaVo> getMetas(String types) {
         if (StringUtils.isNotBlank(types)) {
@@ -122,6 +123,7 @@ public class MetaServiceImpl implements IMetaService {
             if (metaVos.size() != 0) {
                 throw new TipException("已经存在该项");
             } else {
+
                 metas = new MetaVo();
                 metas.setName(name);
                 if (null != mid) {
@@ -147,6 +149,7 @@ public class MetaServiceImpl implements IMetaService {
         if (StringUtils.isNotBlank(names) && StringUtils.isNotBlank(type)) {
             String[] nameArr = StringUtils.split(names, ",");
             for (String name : nameArr) {
+
                 this.saveOrUpdate(cid, name, type);
             }
         }

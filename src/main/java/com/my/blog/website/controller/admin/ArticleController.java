@@ -32,7 +32,9 @@ import java.util.List;
 public class ArticleController extends BaseController {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(ArticleController.class);
-
+    /*
+                              这就算是代码冲突
+     */
     @Resource
     private IContentService contentsService;
 

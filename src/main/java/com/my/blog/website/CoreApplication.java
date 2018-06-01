@@ -19,12 +19,19 @@ import javax.sql.DataSource;
 @SpringBootApplication
 @EnableTransactionManagement
 public class CoreApplication {
+    //类似于springxml中的bean创建一个对象交给spring管理，init和destroy负责创建和回收
     @Bean(initMethod = "init", destroyMethod = "close")
+    //指定绑定application.properties中的那个资源文件
+    //根据他创建指定对象
     @ConfigurationProperties(prefix = "spring.datasource")
     public DataSource dataSource() {
         return new DruidDataSource();
     }
 
+    /*
+    sqlsesionfactory是创建sqlsession的工厂，而sqlsession是连接应用层与底层的
+    一个对象，类似于jdbc中的一个connection
+     */
     @Bean
     public SqlSessionFactory sqlSessionFactoryBean() throws Exception {
         PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();

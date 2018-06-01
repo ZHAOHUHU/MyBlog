@@ -25,6 +25,7 @@
                             </thead>
                             <tbody>
                             <th:block th:each="post : ${articles.list}">
+
                                 <tr th:cid="${post.cid}">
                                     <td>
                                         <a th:href="@{'/admin/article/'+${post.cid}}" th:text="${post.title}"></a>
