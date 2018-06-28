@@ -30,6 +30,12 @@ import java.util.List;
 @RequestMapping("/admin/article")
 @Transactional(rollbackFor = TipException.class)
 public class ArticleController extends BaseController {
+1
+    2
+    3
+    4
+    5
+    6
 
     private static final Logger LOGGER = LoggerFactory.getLogger(ArticleController.class);
     /*

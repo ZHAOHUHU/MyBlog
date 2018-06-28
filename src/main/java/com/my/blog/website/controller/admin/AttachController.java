@@ -35,7 +35,12 @@ import java.util.List;
 @Controller
 @RequestMapping("admin/attach")
 public class AttachController extends BaseController {
-
+1
+    2
+    3
+    4
+    5
+    6
     private static final Logger LOGGER = LoggerFactory.getLogger(AttachController.class);
 
     public static final String CLASSPATH = TaleUtils.getUplodFilePath();
