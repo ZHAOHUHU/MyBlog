@@ -24,13 +24,12 @@ import org.springframework.web.bind.annotation.*;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
-
+fdsgsfgfds
 @Controller
 @RequestMapping("/admin/article")
 @Transactional(rollbackFor = TipException.class)
 public class ArticleController extends BaseController {
-//服务器修改
-    //服务i起再修改
+//本地修改
     private static final Logger LOGGER = LoggerFactory.getLogger(ArticleController.class);
     @Resource
     private IContentService contentsService;
