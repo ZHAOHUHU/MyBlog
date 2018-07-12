@@ -23,7 +23,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
-//服务武器修改啊哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈
+//本地修改啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
 @Controller
 @RequestMapping("/admin/article")
 @Transactional(rollbackFor = TipException.class)
