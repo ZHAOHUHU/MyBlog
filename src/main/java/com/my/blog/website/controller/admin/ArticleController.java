@@ -33,12 +33,8 @@ public class ArticleController extends BaseController {
 //revert之后的样子
 
     private static final Logger LOGGER = LoggerFactory.getLogger(ArticleController.class);
-    /*
-                              这就算是代码冲突
-     */
     @Resource
     private IContentService contentsService;
-//我再远程的修改
     @Resource
     private IMetaService metasService;
 
