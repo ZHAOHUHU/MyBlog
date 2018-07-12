@@ -24,12 +24,12 @@ import org.springframework.web.bind.annotation.*;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
-
+/ /fuwuqidiugaiodfads
 @Controller
 @RequestMapping("/admin/article")
 @Transactional(rollbackFor = TipException.class)
 public class ArticleController extends BaseController {
-/ ///////////////////////////////////////////////////////////////////////////////////////////////////服务器
+
     private static final Logger LOGGER = LoggerFactory.getLogger(ArticleController.class);
     @Resource
     private IContentService contentsService;
@@ -37,7 +37,7 @@ public class ArticleController extends BaseController {
     private IMetaService metasService;
     @Resource
     private ILogService logService;
-/ /////////////////////////////////////////////////////////////////
+/ /
     @GetMapping(value = "")
     public String index(@RequestParam(value = "page", defaultValue = "1") int page,
                         @RequestParam(value = "limit", defaultValue = "15") int limit, HttpServletRequest request) {
