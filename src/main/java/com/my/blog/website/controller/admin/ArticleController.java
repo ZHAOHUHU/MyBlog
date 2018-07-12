@@ -1,6 +1,5 @@
 package com.my.blog.website.controller.admin;
 
-//BABY LETS GOU
 import com.github.pagehelper.PageInfo;
 import com.my.blog.website.constant.WebConst;
 import com.my.blog.website.controller.BaseController;
@@ -25,19 +24,17 @@ import org.springframework.web.bind.annotation.*;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
-//本地这么修改
+
 @Controller
 @RequestMapping("/admin/article")
 @Transactional(rollbackFor = TipException.class)
 public class ArticleController extends BaseController {
-//revert之后的样子
-
+//本地修改
     private static final Logger LOGGER = LoggerFactory.getLogger(ArticleController.class);
     @Resource
     private IContentService contentsService;
     @Resource
     private IMetaService metasService;
-
     @Resource
     private ILogService logService;
 
@@ -97,7 +94,6 @@ public class ArticleController extends BaseController {
         }
         return RestResponseBo.ok();
     }
-
     @RequestMapping(value = "/delete")
     @ResponseBody
     public RestResponseBo delete(@RequestParam int cid, HttpServletRequest request) {
@@ -108,5 +104,4 @@ public class ArticleController extends BaseController {
         }
         return RestResponseBo.ok();
     }
-    //BLACKPINK IN YOUR AREA
 }
