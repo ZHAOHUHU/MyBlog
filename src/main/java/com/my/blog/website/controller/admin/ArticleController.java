@@ -25,18 +25,20 @@ import org.springframework.web.bind.annotation.*;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
-
+//本地这么修改
 @Controller
 @RequestMapping("/admin/article")
 @Transactional(rollbackFor = TipException.class)
 public class ArticleController extends BaseController {
-re
+//revert之后的样子
+
     private static final Logger LOGGER = LoggerFactory.getLogger(ArticleController.class);
     /*
+                              这就算是代码冲突
      */
     @Resource
     private IContentService contentsService;
-/ 
+//我再远程的修改
     @Resource
     private IMetaService metasService;
 
