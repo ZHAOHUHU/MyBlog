@@ -29,7 +29,8 @@ import java.util.List;
 @RequestMapping("/admin/article")
 @Transactional(rollbackFor = TipException.class)
 public class ArticleController extends BaseController {
-//本地修改
+//服务器修改
+    //服务i起再修改
     private static final Logger LOGGER = LoggerFactory.getLogger(ArticleController.class);
     @Resource
     private IContentService contentsService;
